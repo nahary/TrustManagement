@@ -1,4 +1,4 @@
-FROM node:18.4.0-slim
+FROM node:18.4.0-slim@sha256:d4ccbaac23809fd245fa7d5dfb8fbe18315c0014b4bcce2f0d98ced5086d6ab2
 
 WORKDIR /home/node
 
