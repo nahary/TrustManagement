@@ -1,4 +1,4 @@
-FROM node:16.13.0-slim
+FROM node:16.13.0-slim@sha256:a5eecf2ee53935cb7974dfff42260d97289d61be9d7a2062c693be93c0cdcd7a
 
 # Default P2P Port:
 EXPOSE 7447
