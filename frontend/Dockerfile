@@ -1,4 +1,4 @@
-FROM node:18.4.0-alpine as builder
+FROM node:18.4.0-alpine@sha256:7ae41699c38d8e50f5bf592867cf661368d71ff922e07f6f66f36dca2ff0c590 as builder
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
@@ -11,7 +11,7 @@ RUN npm run build
 
 ######
 
-FROM nginx:1.21.6-alpine
+FROM nginx:1.21.6-alpine@sha256:a74534e76ee1121d418fa7394ca930eb67440deda413848bc67c68138535b989
 
 ARG USE_SSL
 ARG SSL_DOMAIN
